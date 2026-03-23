@@ -1,0 +1,39 @@
+{
+  // ============================================
+  // C_CPP_PROPERTIES.JSON - IntelliSense (code completion) settings
+  // ============================================
+
+  // List of configurations (you can have multiple)
+  "configurations": [
+    {
+      // Name of this configuration (shown in VSCode status bar)
+      "name": "Linux",
+
+      // Folders to search for header files (#include <iostream>, etc.)
+      "includePath": [
+        "${workspaceFolder}/**",   // All files in your project folder
+        "/usr/include",            // System C headers location
+        "/usr/local/include"        // Local system headers location
+      ],
+
+      // Preprocessor definitions (usually empty)
+      "defines": [],
+
+      // Path to your C++ compiler (g++)
+      "compilerPath": "/bin/g++",
+
+      // C language standard version (C11)
+      "cStandard": "c11",
+
+      // C++ language standard version (C++17)
+      "cppStandard": "c++17",
+
+      // IntelliSense mode for code completion
+      // Uses Linux GCC settings for best compatibility
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ],
+
+  // Version of this configuration file
+  "version": 4
+}
