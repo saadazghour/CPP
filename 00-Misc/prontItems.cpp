@@ -8,6 +8,8 @@ void printItems(int n){
   }
 }
 
+
+// O(n)
 int main(){
   printItems(10);
 }
