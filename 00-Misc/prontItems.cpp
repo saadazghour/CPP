@@ -10,7 +10,7 @@ void printItems(int n){
   }
 }
 
-// O(n^2) - n * n = n^2 - (n^2) - O(n^2)
+// O(n^2) - n * n = n^2 - O(n^2)
 int main(){
   printItems(10);
 }
