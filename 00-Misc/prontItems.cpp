@@ -4,18 +4,13 @@ using namespace std;
 
 void printItems(int n){
   for (int i = 0; i < n; i++){
-    cout << i << endl;
-  }
-
-  for (int j = 0; j < n; j++)
-  {
-    cout << j << endl;
+    for (int j = 0; j < n; j++){
+      cout << i << j << endl;
+    }
   }
 }
 
-// Drop Constants O(2n) - n + n = 2n - O(2n) - O(n)
-
-// O(n)
+// O(n^2) - n * n = n^2 - (n^2) - O(n^2)
 int main(){
   printItems(10);
 }
