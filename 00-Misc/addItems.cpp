@@ -7,7 +7,7 @@ int addItems(int n){
   // What if we had n + n + n ----> Here two operations -- O(2) ---> then wer's simplify this --> O(1)
 }
 
-// O(1)
+// O(1) ----> Very efficient.
 int main(){
   int sum;
 

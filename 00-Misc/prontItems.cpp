@@ -12,7 +12,7 @@ void printItems(int n){
 
   // O(n)
   for (int k = 0; k < n; k++){
-   cout << k << endl;
+    cout << k << endl;
   }
 
 }
