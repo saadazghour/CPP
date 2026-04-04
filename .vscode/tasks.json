@@ -5,27 +5,24 @@
   
   "tasks": [
     {
-      // Type of task: cppbuild = C++ compilation
-      "type": "cppbuild",
+      // Type of task: shell = lets us create build/ before compiling
+      "type": "shell",
 
       // Display name shown in VSCode
       "label": "C/C++: g++ build active file",
 
-      // Path to the compiler (g++ = GNU C++ compiler)
-      "command": "/bin/g++",
+      // Use bash so we can ensure the build directory exists first
+      "command": "/bin/bash",
 
       // Compiler flags/options:
       "args": [
-        "-fdiagnostics-color=always",  // Show colored output
-        "-g",                           // Include debugging info
-        "${file}",                      // The current file (e.g., HelloWorld.cpp)
-        "-o",                           // Output flag
-        "${fileDirname}/${fileBasenameNoExtension}"  // Output filename (e.g., HelloWorld)
+        "-lc",
+        "mkdir -p \"${workspaceFolder}/build\" && /bin/g++ -fdiagnostics-color=always -g \"${file}\" -o \"${workspaceFolder}/build/${fileBasenameNoExtension}\""
       ],
 
       // Options for running the command
       "options": {
-        "cwd": "${fileDirname}"  // Run in the same folder as the file
+        "cwd": "${workspaceFolder}"  // Run from the repo root
       },
 
       // Pattern to match compiler errors/warnings
