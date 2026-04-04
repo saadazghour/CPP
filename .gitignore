@@ -1,0 +1,17 @@
+build/
+
+# Common compiled C/C++ artifacts
+*.out
+*.exe
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+
+# In practice folders, keep source files tracked & ignore accidental binaries
+00-Misc/*
+!00-Misc/*.cpp
+!00-Misc/*.h
+!00-Misc/*.hpp
